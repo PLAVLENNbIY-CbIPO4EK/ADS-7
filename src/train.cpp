@@ -27,7 +27,7 @@ void Train::addCar(bool light) {
     }
 }
 
-int Train::getLength() {
+int Train::getLen() {
     countOp = 0;
 
     if (first == nullptr) {

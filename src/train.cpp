@@ -27,7 +27,7 @@ void Train::addCar(bool light) {
         first->prev = car;
     }
 }
-int Train::getLen() {
+int Train::getLength() {
     countOp = 0;
 
     if (first == nullptr) {

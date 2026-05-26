@@ -8,7 +8,7 @@
 int main() {
   std::ofstream fout("data.txt");
 
-  srand(time(nullptr));
+    unsigned int seed = time(nullptr);
 
   for (int n = 10; n <= 500; n += 10) {
     Train t1;
@@ -27,7 +27,7 @@ int main() {
 
     // random
     for (int i = 0; i < n; i++) {
-      t3.addCar(srand()%2);
+      t3.addCar(rand_r(&seed) % 2);   
     }
 
     t1.getLen();

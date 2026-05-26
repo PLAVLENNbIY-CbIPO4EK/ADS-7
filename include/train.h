@@ -6,8 +6,8 @@ class Train {
  private:
   struct Car {
     bool light;
-    Car *n;
-    Car *p;
+    Car *next;
+    Car *prev;
   };
 
   int countOp;
@@ -16,7 +16,7 @@ class Train {
  public:
   Train();
   void addCar(bool light);
-  int getLength();
+  int getLen();
   int getOpCount();
 };
 

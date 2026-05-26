@@ -8,7 +8,7 @@
 int main() {
   std::ofstream fout("data.txt");
 
-    unsigned int seed = time(nullptr);
+  unsigned int seed = time(nullptr);
 
   for (int n = 10; n <= 500; n += 10) {
     Train t1;

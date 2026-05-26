@@ -30,9 +30,9 @@ int main() {
       t3.addCar(rand_r()%2);
     }
 
-    t1.getLength();
-    t2.getLength();
-    t3.getLength();
+    t1.getLen();
+    t2.getLen();
+    t3.getLen();
 
     fout << n << " "
          << t1.getOpCount() << " "
